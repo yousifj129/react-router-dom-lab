@@ -11,7 +11,6 @@ const LetterForm = ({ mailboxes, addLetter }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        console.log(formData)
         addLetter(formData)
         navigate('/mailboxes')
     }
