@@ -28,7 +28,7 @@ const App = () => {
   const addLetter = (letter) =>{
 
     const newLetters = [...letters, letter]
-
+    console.log(newLetters)
     setLetters(newLetters)
   }
 

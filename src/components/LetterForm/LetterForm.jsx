@@ -4,7 +4,7 @@ import { useNavigate } from "react-router"
 const LetterForm = ({ mailboxes, addLetter }) => {
     const navigate = useNavigate()
     const [formData, setFormData] = useState({
-        mailboxId: 0,
+        mailboxId: 1,
         recipient: '',
         message: '',
     })
@@ -26,7 +26,7 @@ const LetterForm = ({ mailboxes, addLetter }) => {
             <form onSubmit={handleSubmit}>
                 <select name="mailboxId" id="mailboxId" onChange={handleChange}>
                     {mailboxes.map((mailbox)=>{
-                        return <option value={mailbox._id} key={mailbox._id}>Mailbox {mailbox._id}</option>
+                        return <option value={mailbox._id+1} key={mailbox._id}>Mailbox {mailbox._id}</option>
                     })}
                 </select>
                 
