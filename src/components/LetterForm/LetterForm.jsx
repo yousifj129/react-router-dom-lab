@@ -26,7 +26,7 @@ const LetterForm = ({ mailboxes, addLetter }) => {
             <form onSubmit={handleSubmit}>
                 <select name="mailboxId" id="mailboxId" onChange={handleChange}>
                     {mailboxes.map((mailbox)=>{
-                        return <option value={mailbox._id+1} key={mailbox._id}>Mailbox {mailbox._id}</option>
+                        return <option value={mailbox._id} key={mailbox._id}>Mailbox {mailbox._id}</option>
                     })}
                 </select>
                 
