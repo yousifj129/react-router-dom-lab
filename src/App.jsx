@@ -30,9 +30,6 @@ const App = () => {
     const newLetters = [...letters, letter]
 
     setLetters(newLetters)
-    
-    console.log(newLetters)
-
   }
 
   return (
