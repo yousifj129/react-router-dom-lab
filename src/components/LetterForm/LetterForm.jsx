@@ -20,7 +20,7 @@ const LetterForm = ({ mailboxes, addLetter }) => {
     }
     return (
         <>
-            <h1>New Mailbox</h1>
+            <h1>New Letter</h1>
 
 
             <form onSubmit={handleSubmit}>

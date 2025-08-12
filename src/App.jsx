@@ -13,7 +13,7 @@ import LetterForm from "./components/LetterForm/LetterForm";
 
 const App = () => {
   const [mailboxes, setMailboxes] = useState([{
-    _id: 0,
+    _id: 1,
     boxSize: 'Small',
     boxOwner: 'Alex'
   },])
