@@ -11,6 +11,7 @@ const LetterForm = ({ mailboxes, addLetter }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
+        console.log(formData)
         addLetter(formData)
         navigate('/mailboxes')
     }
@@ -24,7 +25,7 @@ const LetterForm = ({ mailboxes, addLetter }) => {
 
 
             <form onSubmit={handleSubmit}>
-                <select name="mailboxId" id="mailboxId">
+                <select name="mailboxId" id="mailboxId" onChange={handleChange}>
                     {mailboxes.map((mailbox)=>{
                         return <option value={mailbox._id} key={mailbox._id}>Mailbox {mailbox._id}</option>
                     })}

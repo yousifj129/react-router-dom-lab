@@ -9,7 +9,7 @@ const MailboxDetails = (props) => {
         (mailbox) => mailbox._id === Number(mailboxId)
     );
     const selectedLetters = props.letters.filter((letter) => (
-        letter.mailboxId === Number(mailboxId)
+        letter.mailboxId == Number(mailboxId)
     ));
     return (
         <>
